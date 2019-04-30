@@ -1,7 +1,33 @@
-.test {
-    p {
-        span {
-            color: orange;
-        }
+#header-top {
+    display: flex;
+    justify-content: space-between;
+    background-image: radial-gradient(ellipse at bottom, $blue -30%, $d-green 50%, $l-green 130%);
+    height: 78px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    #main-heading,
+    i {
+        align-self: center;
+        margin: 0 22px;
+        color: $light;
     }
+
+    #main-heading {
+        // width: 50%;
+        line-height: .95;
+    }
+
+    i {
+        font-size: 32px;
+    }
+}
+
+#banner {
+    background-image: url('../../imgs/house-main-sm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 44%;
+    height: 100vh;
 }

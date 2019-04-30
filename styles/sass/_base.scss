@@ -1,0 +1,13 @@
+html, body {
+    background-color: $light;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading, sans-serif;  
+}
+
+p, li {
+    font-family: $font-reg, serif;
+}
