@@ -6,17 +6,18 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 100;
+    color: $light;
 
     #main-heading,
     i {
         align-self: center;
         margin: 0 22px;
-        color: $light;
     }
 
     #main-heading {
-        // width: 50%;
-        line-height: .95;
+        line-height: 1;
+        text-align: center;
     }
 
     i {
@@ -24,10 +25,55 @@
     }
 }
 
+nav {
+    position: absolute;
+    top: 78px;
+    left: 00px;
+    height: 100%;
+    width: 200px;
+    background-color: $d-green;
+    z-index: 100;
+    color: $light;
+    border-top: solid 1px $light;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+
+        li {
+            padding: 15px 0;
+            font-weight: 700;
+            border-bottom: solid 1px $light;
+
+            &:first-child {
+                padding: 20px 0 15px;
+            }
+        }
+    }
+}
+
 #banner {
     background-image: url('../../imgs/house-main-sm.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 110%;
     background-position: 44%;
     height: 100vh;
+    border-bottom: 5px solid $blue;
+
+    &:before {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        opacity: .6;
+        background-image: linear-gradient(to top, rgba(0,0,0,0), 0, rgba(0,0,0,0) 70%, rgb(255, 255, 40) 83%);
+        mix-blend-mode: screen;
+    }
 }
