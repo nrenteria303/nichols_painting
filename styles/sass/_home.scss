@@ -8,11 +8,12 @@
 
         &:last-child {
             border-bottom: none;
+            margin-bottom: 40px;
         }
 
         i {
             font-size: 150px;
-            margin: 0 8px;
+            margin: 0 8px 4px;
             color: $l-green;
         }
 
@@ -25,6 +26,7 @@
 
         h3 {
             margin: 0 6px;
+            font-family: $font-reg;
         }
 
         a {
