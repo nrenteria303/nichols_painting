@@ -31,5 +31,5 @@ function hideMenu() {
 }
 
 menuIcn.addEventListener('click', toggleNav);
-mainFront.addEventListener('click', hideMenu);
-banner.addEventListener('click', hideMenu);
+// mainFront.addEventListener('click', hideMenu);
+// banner.addEventListener('click', hideMenu);

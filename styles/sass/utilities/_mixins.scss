@@ -1,0 +1,13 @@
+
+@mixin wrapper {
+  @content;
+  width: calc(100vw - 215px);
+  margin-left: auto;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}

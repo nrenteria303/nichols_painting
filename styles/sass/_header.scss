@@ -9,6 +9,10 @@
     z-index: 100;
     color: $light;
 
+    @media (min-width: $mq-xl) {
+        display: none;
+    }
+
     #main-heading,
     i {
         align-self: center;
@@ -40,7 +44,6 @@
             background-color: $light;
             border-radius: 3px;
             transition: all .3s ease-out;
-
         }
     }
 
@@ -67,6 +70,24 @@ nav {
     border-top: solid 1px $light;
     transition: left .4s ease-out;
 
+    @media (min-width: $mq-xl) {
+        height: 100%;
+        top:0;
+        left: 0;
+    }
+
+    #nav_heading {
+        display: none;
+
+        @media (min-width: $mq-xl) {
+            display: block;
+            color: $light;
+            font-size: 2.5rem;
+            padding-left: 10px;
+            margin: 48px 0;
+        }
+    }
+
     ul {
         margin: 0;
         padding: 0;
@@ -77,15 +98,52 @@ nav {
             font-weight: 700;
             border-bottom: solid 1px $light;
 
+            &:first-child {
+                @media (min-width: $mq-xl) {
+                    border-top: solid 1px $light;
+                    
+                }
+            }
+
             a {
                 color: $light;
                 text-decoration: none;
                 display: block;
                 padding: 15px 0;
 
+                background-image: linear-gradient(
+                                        to left,
+                                        transparent 0%,
+                                        transparent 50%,
+                                        $light 50%,
+                                        $light 100%
+                                    );
+                background-size: 200% 100%;
+                background-position: 100% 100%;
+                transition: all ease .34s;
+
+                &:hover {
+                    background-position: 0% 100%;
+                    color: $d-green;
+                }
+
                 &:first-child {
                     padding: 20px 0 15px;
                 }
+
+                // &:after {
+                //     content: '';
+                //     height: 0;
+                //     width: 0;
+                //     border-bottom: 28.3px solid transparent;
+                //     border-left: 14.15px solid;
+                //     border-top: 28.3px transparent;
+                //     position: absolute;
+                //     top: 0;
+                //     right: 0;
+                //     bottom: 0;
+                //     transform: translate(14.15px);
+                // }
             }
         }
     }
@@ -98,6 +156,14 @@ nav {
     background-position: 44%;
     height: 100vh;
     border-bottom: 5px solid $blue;
+    position: relative;
+
+    @media (min-width: $mq-xl) {
+        background-image: url('../../imgs/house-main-lg.jpg');
+        background-size: cover;
+        background-position: 0 80%;
+        @include wrapper;
+    }
 
     &:before {
         position: absolute;
@@ -112,5 +178,46 @@ nav {
         opacity: .6;
         background-image: linear-gradient(to top, rgba(0,0,0,0), 0, rgba(0,0,0,0) 70%, rgb(255, 255, 40) 83%);
         mix-blend-mode: screen;
+    }
+
+    @keyframes arrow {
+        0% {
+            top: 50%;
+            opacity: 1;
+        }
+        100% {
+            top: 80%;
+            opacity: 0;
+        }
+    }
+
+    #arrow_down_cont {
+        height: 300px;
+        width: 200px;
+        position: absolute;
+        bottom: 0;
+        left: calc((100vw - 200px) /2);
+
+        @media (min-width: $mq-xl) {
+            left: calc((100vw - 200px) / 2 - 100px);
+        }
+
+        #left_arrow_side,
+        #right_arrow_side {
+            background-color: $light;
+            width: 70px;
+            height: 6px;
+            position: absolute;
+            top: 50%;
+            animation: arrow 1.7s ease-in-out infinite;
+        }
+        #left_arrow_side {
+            right: 46%;
+            transform: rotate(40deg) skew(39deg);
+        }
+        #right_arrow_side {
+            left: 46%; 
+            transform: rotate(-40deg) skew(-39deg);
+        }
     }
 }
