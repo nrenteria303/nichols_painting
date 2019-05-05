@@ -13,6 +13,20 @@
         padding-bottom: 40px;
         border-bottom: 4px dashed $blue;
 
+        &:hover i {
+            transform: scale(1.1);
+        }
+
+        &:first-child:hover i {
+            box-shadow: -4px 4px 4px grey;
+        }
+        &:nth-child(2):hover i {
+            box-shadow: 0 4px 4px grey;
+        }
+        &:last-child:hover i {
+            box-shadow: 4px 4px 4px grey;
+        }
+
         @media (min-width: $mq-xl) {
             border: solid 4px $blue;
             padding: 0px;
@@ -20,19 +34,17 @@
             background-color: rgb(243, 243, 243);
             display: flex;
             flex-direction: column;
-
-
         }
 
         &:first-child {
             @media (min-width: $mq-xl) {
-                box-shadow: -4px 4px 6px grey;
+                box-shadow: -8px 8px 8px grey;
             }
         }
         
         &:nth-child(2) {
             @media (min-width: $mq-xl) {
-                box-shadow: 0 4px 6px grey;
+                box-shadow: 0 8px 8px grey;
             }
         }
 
@@ -43,7 +55,7 @@
             @media (min-width: $mq-xl) {
                 border: solid 4px $blue;
                 margin: 50px 0 80px;
-                box-shadow: 4px 4px 6px grey;
+                box-shadow: 8px 8px 8px grey;
             }
         }
 
@@ -51,6 +63,7 @@
             font-size: 150px;
             margin: 0 8px 4px;
             color: $l-green;
+            transition: all .3s ease-out;
 
             @media (min-width: $mq-xl) {
                 font-size: 130px;
