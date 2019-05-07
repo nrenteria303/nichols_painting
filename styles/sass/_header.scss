@@ -165,16 +165,20 @@ nav {
         opacity: .6;
         background-image: linear-gradient(to top, rgba(0,0,0,0), 0, rgba(0,0,0,0) 70%, rgb(255, 255, 40) 83%);
         mix-blend-mode: screen;
+        transition: top .6s ease-out;
     }
 
     h1 {
         font-family: $font-fancy;
+        opacity: 0;
         color: rgb(0, 61, 243);
         text-align: center;
         font-size: 2.4em;
         position: relative;
         margin-top: 0;
         top: 92px;
+        transition: 1.2s opacity ease-out;
+        // transition-delay: .4s;
 
         @media (min-width: $mq-xl) {
             font-size: 6.8em;
@@ -215,12 +219,12 @@ nav {
             animation: arrow 1.7s ease-in-out infinite;
         }
         #left_arrow_side {
-            right: 46%;
-            transform: rotate(40deg) skew(39deg);
+            right: 45.908%;
+            transform: rotate(40deg) skew(40deg);
         }
         #right_arrow_side {
-            left: 46%; 
-            transform: rotate(-40deg) skew(-39deg);
+            left: 45.908%; 
+            transform: rotate(-40deg) skew(-40deg);
         }
     }
 }

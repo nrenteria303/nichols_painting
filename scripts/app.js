@@ -1,5 +1,6 @@
 const menuIcn = document.getElementById("menu_bars");
 const nav = document.getElementById('nav');
+const bannerHeading = document.getElementById('fancy_heading');
 const mainFront = document.getElementById('front_page_main');
 const banner = document.getElementById('banner');
 const bar1 = document.getElementById('bar_1');
@@ -22,12 +23,16 @@ function toggleNav() {
     }
 }
 
-function hideMenu() {
-        menuShowing = false;
-        nav.style.left = '-200px';
-        bar1.classList.remove('right_x');
-        bar2.classList.remove('left_x');
-        bar3.classList.remove('right_x');
+// function hideMenu() {
+//     menuShowing = false;
+//     nav.style.left = '-200px';
+//     bar1.classList.remove('right_x');
+//     bar2.classList.remove('left_x');
+//     bar3.classList.remove('right_x');
+// }
+
+function showBannerHeading() {
+    bannerHeading.style.opacity = 1;
 }
 
 menuIcn.addEventListener('click', toggleNav);
