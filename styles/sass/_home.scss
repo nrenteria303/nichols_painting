@@ -13,25 +13,41 @@
         padding-bottom: 40px;
         border-bottom: 4px dashed $blue;
 
-        &:hover i {
-            transform: scale(1.1);
+        &:hover .icn_cont {
+            transform: none;
+
+            @media (min-width: $mq-xl) {
+                transform: scale(1.1);
+            }
         }
 
-        &:first-child:hover i {
-            box-shadow: -4px 4px 4px grey;
+        &:first-child:hover .icn_cont {
+            box-shadow: none;
+
+            @media (min-width: $mq-xl) {
+                box-shadow: -4px 4px 4px grey;
+            }
         }
-        &:nth-child(2):hover i {
-            box-shadow: 0 4px 4px grey;
+        &:nth-child(2):hover .icn_cont {
+            box-shadow: none;
+
+            @media (min-width: $mq-xl) {
+                box-shadow: 0 4px 4px grey;
+            }
         }
-        &:last-child:hover i {
-            box-shadow: 4px 4px 4px grey;
+        &:last-child:hover .icn_cont {
+            box-shadow: none;
+
+            @media (min-width: $mq-xl) {
+                box-shadow: 4px 4px 4px grey;
+            }
         }
 
         @media (min-width: $mq-xl) {
             border: solid 4px $blue;
             padding: 0px;
             width: 400px;
-            background-color: rgb(243, 243, 243);
+            background-color: $l-blue;
             display: flex;
             flex-direction: column;
         }
@@ -59,43 +75,43 @@
             }
         }
 
-        i {
-            font-size: 150px;
-            margin: 0 8px 4px;
-            color: $l-green;
-            transition: all .3s ease-out;
+        // i {
+        //     font-size: 150px;
+        //     margin: 0 8px 4px;
+        //     color: $l-green;
+        //     transition: all .3s ease-out;
 
-            @media (min-width: $mq-xl) {
-                font-size: 130px;
-                align-self: center;
-                margin-top: 20px;
-                padding: 8px;
-                border: solid 2px lightgrey;
-            }
-        }
+        //     @media (min-width: $mq-xl) {
+        //         font-size: 130px;
+        //         align-self: center;
+        //         margin-top: 20px;
+        //         padding: 8px;
+        //         border: solid 2px lightgrey;
+        //     }
+        // }
 
-        &:nth-child(2n+1) > i {
-            float: left;
+        // &:nth-child(2n+1) > .i {
+        //     float: left;
 
-            @media (min-width: $mq-sm) {
-                padding-right: 24px;
-            }
-            @media (min-width: $mq-xl) {
-                float: none;
-                padding: 8px;
-            }
-        }
-        &:nth-child(2n) > i {
-            float: right;
+        //     @media (min-width: $mq-sm) {
+        //         padding-right: 24px;
+        //     }
+        //     @media (min-width: $mq-xl) {
+        //         float: none;
+        //         padding: 8px;
+        //     }
+        // }
+        // &:nth-child(2n) > i {
+        //     float: right;
 
-            @media (min-width: $mq-sm) {
-                padding-left: 24px;
-            }
-            @media (min-width: $mq-xl) {
-                float: none;
-                padding: 8px;
-            }
-        }
+        //     @media (min-width: $mq-sm) {
+        //         padding-left: 24px;
+        //     }
+        //     @media (min-width: $mq-xl) {
+        //         float: none;
+        //         padding: 8px;
+        //     }
+        // }
 
         h3 {
             margin: 0 6px;
