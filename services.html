@@ -11,7 +11,7 @@
   
   </head>
   
-  <body onload="showBannerHeading()">
+  <body>
     <header>
       <div id="header-top">
         <div id="menu_bars">
@@ -36,26 +36,63 @@
 
     <main>
       <div id="services_wrapper">
+
+        <div id="slideshow_cont">
+          <div class="slides fade">
+            <img src="imgs/picture-1.jpg" alt="1st pic">
+            <div class="caption"><p>This is the first picture caption</p></div>
+          </div>
+
+          <div class="slides fade">
+            <img src="imgs/picture-2.jpg" alt="2nd pic">
+            <div class="caption"><p>These photos can be images...</p></div>
+          </div>
+
+          <div class="slides fade">
+            <img src="imgs/picture-3.jpg" alt="3rd pic">
+            <div class="caption"><p>That are examples of your services...</p></div>
+          </div>
+
+          <div class="slides fade">
+            <img src="imgs/picture-4.jpg" alt="4th pic">
+            <div class="caption"><p>And these are their captions</p></div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+        </div>
+
+        <div class="dot_cont">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
         <div id="services_section">
           <h1>Services</h1>
           <p>Nichols Quality Painting is a locally owned and operated company providing services to Northern Colorado and surrounding areas (from Lafayette, CO to Cheyenne, WY).  We use only top-of-the-line products to ensure quality, longevity, and that only the highest standards are met. We ensure professionalism, cleanliness, complete customer satisfaction, friendliness, quality work, and respect for you and your home. Quality preparation is essential. NQP provides a thorough and detailed preparation process of all projects.</p>
-
         </div>
-        <img src="imgs/carpentry-sm.jpg" alt="Hammers, wood, and nails">
-        <div id="specialties">
-            <ul><h1>We specialize in:</h1>
-            <li>Interior Painting</li>
-            <li>Exterior Painting</li>
-            <li>Stain</li>
-            <li>Refinishing</li>
-            <li>Decks</li>
-            <li>Fences</li>
-            <li>Pressure Washing</li>
-            <li>Epoxy Garage Floors</li>
-            <li>Epoxy Countertops</li>
-            <li>Custom Driftwood Art</li>
 
-          </ul>
+        <div id="img_spec_cont">
+          <img src="imgs/carpentry-sm.jpg" alt="Hammers, wood, and nails">
+          <div id="specialties">
+              <ul><h1>We specialize in:</h1>
+              <li>Interior Painting</li>
+              <li>Exterior Painting</li>
+              <li>Stain</li>
+              <li>Refinishing</li>
+              <li>Decks</li>
+              <li>Fences</li>
+              <li>Pressure Washing</li>
+              <li>Epoxy Garage Floors</li>
+              <li>Epoxy Countertops</li>
+              <li>Custom Driftwood Art</li>
+
+            </ul>
+          </div>
+
         </div>
 
       </div>
@@ -64,13 +101,16 @@
     </main>
     
     <footer>
-      <h2>FOOTER</h2>
-      <h3>With info such as...</h3>
-      <h3>Contact or whatever</h3>
+      <div id="footer_contact_cont">
+        <h1>NQP</h1>
+        <p>Phone: (970) 555-0000</p>
+        <p>Email: <a href="mailto:jnich5280@gmail.com">jnich5280@gmail.com</a></p>
+        <p>We would love to answer any of your questions. Give us a call or send us an email now!</p>
+      </div>
     </footer>
   
   <!-- <script src="scripts/jquery-3.3.1.min.js"></script> -->
-  <script src="scripts/app.js"></script>
+  <script src="scripts/services.js"></script>
   </body>
 
 </html>
