@@ -3,6 +3,10 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    @media (max-width: $mq-xl) {
+        overflow-x: hidden;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

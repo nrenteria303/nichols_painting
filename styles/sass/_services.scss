@@ -83,12 +83,19 @@
         }
 
         .caption {
-            color: grey;
+            color: rgb(50, 50, 50);
             padding: 0;
             position: absolute;
-            bottom: 8px;
+            font-weight: 700;
+            bottom: 0;
+            background-color: rgba($color: lightgrey, $alpha: .7);
             width: 100%;
             text-align: center;
+
+            P {
+                margin: 6px 0;
+                font-size: 1.1rem;
+            }
         }
     }
 
@@ -119,8 +126,8 @@
         margin: 20px auto 50px;
 
         @media (min-width: $mq-xl) {
-            max-width: 900px;
-            margin: 30px auto 60px 10%;
+            max-width: 930px;
+            margin: 30px auto 60px;
         }
 
         h1 {
@@ -136,7 +143,9 @@
 
         @media (min-width: $mq-md) {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            max-width: 1220px;
+            margin: 0 auto;
         }
 
         img {
@@ -148,7 +157,7 @@
                 width: 46%;
                 height: 30%;
                 max-width: 600px;
-                margin: 30px auto 60px 10%;
+                margin: 30px 0 60px;
                 border: 4px $blue solid;
                 align-self: center;
             }
@@ -156,7 +165,7 @@
         }
     
         #specialties {
-            width: 100%;
+            width: auto;
             margin: 40px 0 80px;
     
     
