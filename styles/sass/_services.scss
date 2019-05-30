@@ -5,11 +5,22 @@
         @include wrapper;
     }
 
+    h1 {
+        margin: 95px 0 10px 10px;
+        font-size: 3.5rem;
+
+        @media (min-width: $mq-xl) {
+            text-align: center;
+            font-size: 5rem;
+            margin: 20px auto 10px;
+        }
+    }
+
     #slideshow_cont {
         width: 100%;
         max-width: 800px;
         position: relative;
-        margin: 78px auto 2px;
+        margin: 20px auto 2px;
 
         @media (min-width: $mq-md) {
             width: 700px;
@@ -25,6 +36,7 @@
 
             img {
                 width: 100vw;
+                // border-top: 2px solid $blue;
 
                 @media (min-width: $mq-md) {
                     width: 700px;
@@ -94,14 +106,14 @@
 
             P {
                 margin: 6px 0;
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
         }
     }
 
     .dot_cont {
         width: auto;
-        margin: auto;
+        margin: 0 auto 26px;
         text-align: center;
 
         .dot {
@@ -128,10 +140,6 @@
         @media (min-width: $mq-xl) {
             max-width: 930px;
             margin: 30px auto 60px;
-        }
-
-        h1 {
-            font-size: 2.8rem;
         }
 
         p {
