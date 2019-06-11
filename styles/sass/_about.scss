@@ -11,11 +11,19 @@
 
         @media (min-width: $mq-xl) {
             max-width: 900px;
-            margin: 30px auto 60px 10%;
+            margin: 30px auto 60px;
         }
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.9rem;
+            width: fit-content;
+            max-width: 66vw;
+
+            @include heading_borders;
+
+            @media (min-width: $mq-xl) {
+                font-size: 4rem;
+            }
         }
 
         p {

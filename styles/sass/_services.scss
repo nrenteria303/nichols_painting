@@ -5,14 +5,22 @@
         @include wrapper;
     }
 
-    h1 {
+    #serv_main_heading {
         margin: 95px 0 10px 10px;
         font-size: 3.5rem;
+        display: inline-block;
+
+        @include heading_borders;
+
+        @media (min-width: $mq-md) {
+            display: block;
+            width: fit-content;
+            font-size: 5rem;
+            margin: 90px auto 10px;
+        }
 
         @media (min-width: $mq-xl) {
-            text-align: center;
-            font-size: 5rem;
-            margin: 20px auto 10px;
+            margin: 40px auto 30px;
         }
     }
 
@@ -24,7 +32,7 @@
 
         @media (min-width: $mq-md) {
             width: 700px;
-            margin: 90px auto 2px;
+            margin: 60px auto 2px;
         }
 
         @media (min-width: $mq-xl) {
@@ -36,7 +44,6 @@
 
             img {
                 width: 100vw;
-                // border-top: 2px solid $blue;
 
                 @media (min-width: $mq-md) {
                     width: 700px;
@@ -174,7 +181,7 @@
     
         #specialties {
             width: auto;
-            margin: 40px 0 80px;
+            margin: 40px 0 50px;
     
     
             h1 {
@@ -187,13 +194,30 @@
                 font-size: 1.2rem;
                 padding-left: 30px;
                 margin-left: 20px;
-                list-style-image: '»';
-    
-                // li {
-                //     // padding-left: 20px;
-                // }
+                list-style: none;
+            }
+
+            li::before {
+                content: '»';
+                padding-right: 8px;
             }
         }
     }
 
+    
+    #spec_alt {
+        text-align: center;
+        padding: 16px 22px;
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        margin: 30px 0 80px;
+        background-image: linear-gradient(to top right, white -20%, $l-blue 40%, $l-blue 70%, $blue 240%);
+    
+        @media (min-width: $mq-xl) {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 3px;   
+        }
+    }
 }
