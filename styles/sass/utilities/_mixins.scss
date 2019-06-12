@@ -15,7 +15,17 @@
 @mixin heading_borders {
   @content;
   padding: 3px 8px;
-  border-bottom: 6px solid;
+  border-bottom: 8px solid;
   border-right: 2px solid;
-  border-left: 5px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+@mixin cta {
+  width: 92vw;
+  border: solid 4px $blue;
+  box-shadow: 0 0 0 6px lightgray;
+  padding: 12px 16px;
+  text-align: center;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top right, white -20%, $l-blue 40%, $l-blue 70%, $blue 240%);
 }
