@@ -1,3 +1,10 @@
+#front_page_main {
+    @media (min-width: $mq-xl) {
+        @include wrapper;
+    }    
+}
+
+
 #desc_cont {
     color: $d-green;
     position: relative;
@@ -5,14 +12,23 @@
     @media (min-width: $mq-xl) {
         display: flex;
         justify-content: space-evenly;
-        width: 100%;
-        @include wrapper;
+        width: 96%;
+        margin: 40px auto 0;
     }
 
     .front_desc {
         margin: 80px 0 40px;
         padding-bottom: 30px;
-        // border-bottom: 10px dotted $blue;
+
+        @media (min-width: $mq-xl) {
+            border: solid 4px $blue;
+            padding: 0px;
+            width: 400px;
+            background-color: $l-blue;
+            display: flex;
+            flex-direction: column;
+            margin: 40px 9px;
+        }
 
         &:hover .icn_cont {
             transform: none;
@@ -44,22 +60,13 @@
             }
         }
 
-        @media (min-width: $mq-xl) {
-            border: solid 4px $blue;
-            padding: 0px;
-            width: 400px;
-            background-color: $l-blue;
-            display: flex;
-            flex-direction: column;
-        }
-
         &:first-child {
             @media (min-width: $mq-xl) {
                 box-shadow: -8px 8px 8px grey;
             }
         }
         
-        &:nth-child(2) {
+        &:nth-child(3) {
             @media (min-width: $mq-xl) {
                 box-shadow: 0 8px 8px grey;
             }
@@ -83,6 +90,7 @@
                 padding: 30px;
             }
             @media (min-width: $mq-xl) {
+                padding: 16px;
             }
         }
 
