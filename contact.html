@@ -35,7 +35,35 @@
     </header>
 
     <main>
+      <div id="contact_main_inner">
+        <h1 id="contact_heading">Contact Us</h1>
+        <img src="./imgs/c_house_front.jpg" alt="Front of house painted by Nichols Quality Painting">
 
+        <form action="/contact.html" method="post">
+          <h2>For a Free Estimate:</h2>
+          <div id="inputs_wrapper">
+            <div class="input_cont">
+              <label for="name">Name:</label>
+              <input id="name" type="text" name="name" required>
+            </div>
+            <div class="input_cont">
+              <label for="phone">Phone Number:</label>
+              <input id="phone" type="tel" name="phone" required>
+            </div>
+            <div class="input_cont">
+              <label for="email">Email address:</label>
+              <input id="email" type="email" name="email" required>
+            </div>
+            <div class="input_cont">
+              <label for="address">Address or Zip Code:</label>
+              <input id="address" type="text" name="address" required>
+            </div>
+            <label for="message">Project Details:</label><br>
+            <textarea name="projectDetails" id="message" cols="40" rows="8" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </main>
     
     <footer>

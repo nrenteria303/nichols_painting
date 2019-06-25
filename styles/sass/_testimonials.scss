@@ -71,7 +71,7 @@
         margin: 0 auto 80px;
         display: block;
         width: 100vw;
-        max-width: 700px;
+        max-width: 800px;
         border-top: solid 4px $blue;
         border-bottom: solid 4px $blue;
 
@@ -84,7 +84,6 @@
     #t_cta {
         color: $d-green;
         max-width: 500px;
-        margin: 0 auto 80px;
 
         @include cta;
 

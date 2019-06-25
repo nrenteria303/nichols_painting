@@ -22,6 +22,7 @@
 
 @mixin cta {
   width: 92vw;
+  margin: 0 auto 60px;
   border: solid 4px $blue;
   box-shadow: 0 0 0 6px lightgray;
   padding: 12px 16px;

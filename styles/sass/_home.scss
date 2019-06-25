@@ -1,5 +1,6 @@
 #desc_cont {
     color: $d-green;
+    position: relative;
 
     @media (min-width: $mq-xl) {
         display: flex;
@@ -11,7 +12,7 @@
     .front_desc {
         margin: 80px 0 40px;
         padding-bottom: 30px;
-        border-bottom: 4px dashed $blue;
+        // border-bottom: 10px dotted $blue;
 
         &:hover .icn_cont {
             transform: none;
@@ -91,6 +92,36 @@
             color: $blue;
         }
     }
+
+    hr {
+        border: none;
+        border-top: dotted $d-green 10px;
+        width: 86px;
+        margin: 0 auto;
+        top: 6px;
+
+        &::after,
+        &::before {
+            content: '';
+            height: 2px;
+            width: calc(50vw - 85px);
+            position: absolute;
+            background-color: $d-green;
+            margin-top: -5px;
+        }
+
+        &::after {
+            left: 16px;
+        }
+
+        &::before {
+            right: 16px;
+        }
+
+        @media (min-width: $mq-xl) {
+            display: none;
+        }
+    }
 }
 
 #front_contact_cont {
@@ -104,7 +135,6 @@
 
     #h_cta {
         color: $d-green;
-        margin: 0 auto 40px;
         max-width: 800px;
 
         @include cta;

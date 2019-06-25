@@ -208,14 +208,11 @@
     
     #s_cta {
         text-align: center;
-        margin-bottom: 80px;
 
         @include cta;
     
         @media (min-width: $mq-xl) {
             width: 40%;
-            margin-left: auto;
-            margin-right: auto;
             border: solid 4px;   
             box-shadow: 0 0 0 4px lightgray;
         }

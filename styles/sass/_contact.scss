@@ -1,0 +1,119 @@
+#contact_main_inner {
+    margin-top: 90px;
+    color: $d-green;
+
+    @media (min-width: $mq-xl) {
+        @include wrapper;
+        margin-top: 0;
+    }
+
+    #contact_heading {
+        font-size: 3.3rem;
+        width: fit-content;
+        margin-left: 12px;
+
+        @include heading_borders;
+
+        @media (min-width: $mq-xl) {
+            font-size: 4.8rem;
+            display: block;
+            margin: 30px auto;
+        }
+    }
+
+    img {
+        width: 100vw;
+        max-width: 840px;
+        border-top: 4px solid $blue;
+        border-bottom: 4px solid $blue;
+
+        @media (min-width: $mq-xl) {
+            border: solid 4px $blue;
+            // border-radius: 12px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    form {
+        width: 85vw;
+        max-width: 500px;
+        margin: 30px auto;
+        border: solid 1px gray;
+        border-radius: 12px;
+        padding: 12px;
+        font-family: $font-reg;
+        font-weight: 700;
+        color: $l-blue;
+        background-image: linear-gradient(to top left, $blue, steelblue 130%);
+        background-repeat: no-repeat;
+        background-position: 80% 70%;
+        background-size: 210%;
+        position: relative;
+        border: solid 4px $l-blue;
+        box-shadow: 0 0 0 4px $blue;
+
+        #inputs_wrapper {
+            width: 100%;
+            max-width: 310px;
+            margin: 0 auto;
+        }
+
+        .input_cont{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h2, label {
+            text-shadow: 4px 4px 12px black;
+        }
+        
+        h2 {
+            font-size: 2.6rem;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        label {
+            margin-top: 6px;   
+        }
+
+        input {
+            margin: 6px 0 12px 10px;
+            height: 1.25rem;
+            border-radius: 4px;
+        }
+
+        #name {
+            width: 190px;
+        }
+
+        #phone {
+            width: 150px;
+        }
+
+        #email {
+            width: 170px;
+        }
+
+        #address {
+            width: 120px;
+        }
+
+        textarea {
+            border-radius: 4px;
+            margin-top: 6px;
+            width: 97.5%;
+        }
+
+        button {
+            margin: 10px auto;
+            display: block;
+            padding: 5px 8px;
+            font-weight: 700;
+            border: 4px outset $l-blue;
+            border-radius: 8px;
+            background-color: $l-blue;
+        }
+    }
+}
