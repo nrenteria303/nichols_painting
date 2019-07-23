@@ -19,6 +19,8 @@
     .front_desc {
         margin: 80px 0 40px;
         padding-bottom: 30px;
+        perspective: 600px;
+        transform-style: preserve-3d;
 
         @media (min-width: $mq-xl) {
             border: solid 4px $blue;
@@ -34,7 +36,7 @@
             transform: none;
 
             @media (min-width: $mq-xl) {
-                transform: scale(1.1);
+                transform: translateZ(38px);
             }
         }
 
@@ -45,7 +47,7 @@
                 box-shadow: -4px 4px 4px grey;
             }
         }
-        &:nth-child(2):hover .icn_cont {
+        &:nth-child(3):hover .icn_cont {
             box-shadow: none;
 
             @media (min-width: $mq-xl) {

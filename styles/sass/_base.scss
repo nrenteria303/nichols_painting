@@ -1,5 +1,5 @@
 html, body {
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,8 @@ html, body {
 }
 
 html {
-    background-image: linear-gradient(8deg, $d-green -90%, $light 23%, $l-blue 90%, $blue 280%);
+    background: url("../../imgs/img-noise.png");
+    // background-image: linear-gradient(8deg, $d-green -90%, $light 23%, $l-blue 90%, $blue 280%);
 }
 
 h1, h2, h3, h4, h5, h6 {
