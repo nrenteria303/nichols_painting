@@ -13,7 +13,7 @@
 }
 
 #house_cont {
-  // background-color: lightblue;
+  background-color: $light;
   float: left;
 
   .roof {
@@ -91,7 +91,7 @@
     content: '';
     position: absolute;
     width: 5px;
-    height: 70px;
+    height: 69px;
     background-color: $d-green;
     top:11px;
     left: 122px;
@@ -103,7 +103,7 @@
     width: 71px;
     height: 5px;
     background-color: $d-green;
-    bottom: -17px;
+    bottom: -16px;
     right: -121px;
   }
   
