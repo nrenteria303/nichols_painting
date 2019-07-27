@@ -41,35 +41,81 @@
             max-width: 900px;
             margin: 20px auto 12px;
             border-radius: 20px;
-            
-            .cap_lines {
+
+            .cl,
+            .cl_down_1::after,
+            .cl_down_2::after,
+            .cl_up_1::after,
+            .cl_up_2::after {
                 position: absolute;
                 height: 40px;
-                width: 109px;
-                // border: 3px solid $blue;
-                // border-right: none;
-                // border-left: none;
-                background-image: linear-gradient(to bottom, $blue 40%, $l-blue 260%);
-                right: 3px;
-                top: 40px;
-                transform: skew(22deg) rotate(22deg);
+                width: 52px;
             }
 
-            .cap_lines::after {
-                content: '';
-                position: absolute;
-                height: 40px;
-                width: 109px;
-                // border: 3px solid $blue;
-                // border-right: none;
-                // border-left: none;
+            .cl_down_1,
+            .cl_down_1::after,
+            .cl_down_2,
+            .cl_down_2::after {
+                background-image: linear-gradient(to top, $blue 40%, $l-blue 260%);
+            }
+
+            .cl_up_1,
+            .cl_up_1::after,
+            .cl_up_2,
+            .cl_up_2::after {
                 background-image: linear-gradient(to bottom, $blue 40%, $l-blue 260%);
+            }
+
+            .cl_down_1::after,
+            .cl_up_1::after,
+            .cl_down_2::after,
+            .cl_up_2::after {
+                content: '';
+            }
+            
+            .cl_down_1 {
+                right: 60.5px;
+                top: 40px;
+                transform: skew(28deg) rotate(28deg);
+            }
+
+            .cl_down_1::after {
                 top: 78px;
             }
 
-            #cap_lines_2 {
-                top: 284px;
+            .cl_down_2 {
+                right: 3px;
+                top: 40px;
+                transform: skew(-28deg) rotate(-28deg);
             }
+
+            .cl_down_2::after {
+                top: 78px;
+            }
+
+            .cl_up_1 {
+                right: 60.5px;
+                top: 290px;
+                transform: skew(-28deg) rotate(-28deg);
+            }
+
+            .cl_up_1::after {
+                top: 78px;
+            }
+
+            .cl_up_2 {
+                right: 3px;
+                top: 290px;
+                transform: skew(28deg) rotate(28deg);
+            }
+
+            .cl_up_2::after {
+                position: absolute;
+                height: 40px;
+                width: 52px;
+                top: 78px;
+            }
+
         }
 
         .slides {
