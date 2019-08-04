@@ -1,0 +1,108 @@
+#testimonials_wrapper {
+
+    @media (min-width: $mq-xl) {
+        @include wrapper;
+    }
+
+    #testimonials_inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #testimonials_heading {
+        color: $d-green;
+        margin: 92px auto 40px;
+        width: fit-content;
+        max-width: 86vw;
+
+        @include heading_borders;
+
+        @media (min-width: $mq-xl) {
+            margin: 40px auto 70px;
+            font-size: 3.3rem;
+        }
+    }
+
+    #t_img_float {
+        width: 100vw;
+        max-width: 580px;
+        display: block;
+        margin: 0 auto;
+
+        @media (min-width: $mq-xl) {
+            float: right;
+            padding: 0 calc((80vw - 1100px) / 2) 20px 20px;
+        }
+    }
+
+    #test_quotations {
+        margin: 40px 0 70px;
+        max-width: 900px;
+
+        @media (min-width: $mq-lg) {
+            margin: 40px auto 70px;
+        }
+
+        blockquote {
+            font-size: 1.2rem;
+            margin-top: 35px;
+            margin-bottom: 8px;
+
+            @media (min-width: $mq-xl) {
+                font-size: 1.3rem;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin-top: 0;
+            font-weight: bold;
+
+            @media (min-width: $mq-md) {
+                text-align: left;
+                padding-left: 75px;
+            }
+        }
+    }
+
+    #t_img_bottom {
+        margin: 0 auto 80px;
+        display: block;
+        width: 100vw;
+        max-width: 800px;
+        border-top: solid 4px $blue;
+        border-bottom: solid 4px $blue;
+        box-shadow: 0 0 12px 1px black;
+
+        @media (min-width: $mq-md) {
+            border: solid 4px $blue; 
+            border-radius: 20px 0 20px 0;
+        }
+    }
+
+    #t_cta {
+        color: $d-green;
+        max-width: 500px;
+
+        @include cta;
+
+        p {
+            font-size: 1.3rem;
+            text-align: left;
+            max-width: 92%;
+            margin: 8px auto;
+
+            a {
+                color: $d-green;
+                text-decoration: none;
+
+                &:hover {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

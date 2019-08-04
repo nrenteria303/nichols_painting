@@ -1,0 +1,27 @@
+html, body {
+    // background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    @media (max-width: $mq-xl) {
+        overflow-x: hidden;
+    }
+}
+
+html {
+    background: url("../../imgs/img-noise.png");
+    // background-image: linear-gradient(8deg, $d-green -90%, $light 23%, $l-blue 90%, $blue 280%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading, sans-serif;  
+}
+
+p, li, a {
+    font-family: $font-reg, serif;
+}
+
+.bold {
+    font-weight: bold;
+}
