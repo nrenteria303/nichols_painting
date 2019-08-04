@@ -278,9 +278,14 @@
 
         img {
             width: 100%;
+<<<<<<< HEAD
             box-shadow: 0 0 12px 1px black;
             // border-top: solid 4px $blue;
             // border-bottom: solid 4px $blue;
+=======
+            border-top: solid 4px $blue;
+            border-bottom: solid 4px $blue;
+>>>>>>> 079e41a0ad275aa98bf0729fa3399b6c0e295f31
     
             @media (min-width: $mq-md) {
                 width: 46%;
@@ -288,7 +293,11 @@
                 max-width: 600px;
                 // margin: 30px 0 60px;
                 float: right;
+<<<<<<< HEAD
                 // border: 4px $blue solid;
+=======
+                border: 4px $blue solid;
+>>>>>>> 079e41a0ad275aa98bf0729fa3399b6c0e295f31
                 // align-self: center;
             }
     

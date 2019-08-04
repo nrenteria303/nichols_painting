@@ -34,6 +34,7 @@
     img {
         width: 100vw;
         max-width: 540px;
+<<<<<<< HEAD
         // border-top: 4px solid $blue;
         // border-bottom: 4px solid $blue;
         margin: 40px auto 30px;
@@ -43,6 +44,16 @@
         // @media (min-width: $mq-sm) {
         //     border: solid 4px $blue;
         // }
+=======
+        border-top: 4px solid $blue;
+        border-bottom: 4px solid $blue;
+        margin: 40px auto 30px;
+        display: block;
+
+        @media (min-width: $mq-sm) {
+            border: solid 4px $blue;
+        }
+>>>>>>> 079e41a0ad275aa98bf0729fa3399b6c0e295f31
         @media (min-width: $mq-xl) {
             margin: 0 auto;
             display: block;

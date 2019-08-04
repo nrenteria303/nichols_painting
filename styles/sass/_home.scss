@@ -20,11 +20,18 @@
         margin: 80px 0 40px;
         padding-bottom: 30px;
         perspective: 600px;
+<<<<<<< HEAD
         transition: border .2s ease-in;
         transform-style: preserve-3d;
 
         @media (min-width: $mq-xl) {
             border: solid 4px darkgrey;
+=======
+        transform-style: preserve-3d;
+
+        @media (min-width: $mq-xl) {
+            border: solid 4px $blue;
+>>>>>>> 079e41a0ad275aa98bf0729fa3399b6c0e295f31
             padding: 0px;
             width: 400px;
             background-color: $l-blue;
@@ -33,10 +40,13 @@
             margin: 40px 9px;
         }
 
+<<<<<<< HEAD
         &:hover {
             border: solid 4px $blue;
         }
 
+=======
+>>>>>>> 079e41a0ad275aa98bf0729fa3399b6c0e295f31
         &:hover .icn_cont {
             transform: none;
 
@@ -80,11 +90,19 @@
         }
 
         &:last-child {
+<<<<<<< HEAD
             // border-bottom: none;
             margin-bottom: 40px;
 
             @media (min-width: $mq-xl) {
                 // border: solid 4px $blue;
+=======
+            border-bottom: none;
+            margin-bottom: 40px;
+
+            @media (min-width: $mq-xl) {
+                border: solid 4px $blue;
+>>>>>>> 079e41a0ad275aa98bf0729fa3399b6c0e295f31
                 box-shadow: 8px 8px 8px grey;
             }
         }
