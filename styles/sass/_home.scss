@@ -34,7 +34,11 @@
         }
 
         &:hover {
-            border: solid 4px $blue;
+            border: none;
+
+            @media (min-width: $mq-xl) {
+                border: solid 4px $blue;
+            }
         }
 
         &:hover .icn_cont {
@@ -80,11 +84,9 @@
         }
 
         &:last-child {
-            // border-bottom: none;
             margin-bottom: 40px;
 
             @media (min-width: $mq-xl) {
-                // border: solid 4px $blue;
                 box-shadow: 8px 8px 8px grey;
             }
         }
