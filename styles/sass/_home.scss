@@ -17,8 +17,7 @@
     }
 
     .front_desc {
-        padding: 40px 0;
-        padding-bottom: 30px;
+        padding: 60px 0;
         perspective: 600px;
         transition: border .2s ease-in;
         transform-style: preserve-3d;
@@ -27,10 +26,8 @@
         margin-bottom: -5px;
 
         @media (min-width: $mq-xl) {
-            border: solid 4px darkgrey;
+            border: solid 4px $l-blue;
             padding: 0px;
-            width: 400px;
-            background-color: $l-blue;
             display: flex;
             flex-direction: column;
             margin: 40px 9px;
@@ -93,9 +90,9 @@
             }
         }
 
-        &:first-child {
-            background-image: url('../../imgs/trees.jpg');
-
+        &:first-child,
+        &:nth-child(3),
+        &:last-child {
             &::before {
                 content: '';
                 position: absolute;
@@ -105,10 +102,18 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background-color: $d-green;
-                opacity: 0.5;
                 mix-blend-mode: darken;
                 z-index: -1;
+            }
+        }
+
+        &:first-child {
+            background-image: url('../../imgs/trees.jpg');
+
+            &::before {
+                content: '';
+                background-color: rgb(159, 32, 255);
+                opacity: 0.85;
             }
 
             @media (min-width: $mq-xl) {
@@ -121,18 +126,8 @@
             margin-top: -5px;
 
             &::before {
-                content: '';
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background-color: $blue;
-                opacity: 0.7;
-                mix-blend-mode: darken;
-                z-index: -1;
+                background-color: darkgreen;
+                opacity: 0.5;
             }
 
             @media (min-width: $mq-xl) {
@@ -147,18 +142,8 @@
             margin: -5px auto 40px;
 
             &::before {
-                content: '';
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background-color: $d-green;
+                background-color: $blue;
                 opacity: 0.7;
-                mix-blend-mode: darken;
-                z-index: -1;
             }
 
             @media (min-width: $mq-xl) {
@@ -168,7 +153,7 @@
         }
 
         h3 {
-            margin: 0 24px;
+            padding: 0 24px;
             font-family: $font-reg;
             text-align: justify;
             font-size: 1.1rem;
