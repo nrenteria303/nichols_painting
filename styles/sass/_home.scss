@@ -17,11 +17,14 @@
     }
 
     .front_desc {
-        margin: 80px 0 40px;
+        padding: 40px 0;
         padding-bottom: 30px;
         perspective: 600px;
         transition: border .2s ease-in;
         transform-style: preserve-3d;
+        position: relative;
+        background-size: cover;
+        margin-bottom: -5px;
 
         @media (min-width: $mq-xl) {
             border: solid 4px darkgrey;
@@ -31,6 +34,25 @@
             display: flex;
             flex-direction: column;
             margin: 40px 9px;
+        }
+
+        .front-desc-heading,
+        h3,
+        h3 a {
+            z-index: 2;
+            color: $light;
+        }
+
+        .front-desc-heading {
+            font-size: 2.1rem;
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 0;
+
+            @media (min-width: $mq-xl) {
+                margin: 30px auto 20px;
+                text-decoration: none;
+            }
         }
 
         &:hover {
@@ -72,28 +94,84 @@
         }
 
         &:first-child {
+            background-image: url('../../imgs/trees.jpg');
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $d-green;
+                opacity: 0.5;
+                mix-blend-mode: darken;
+                z-index: -1;
+            }
+
             @media (min-width: $mq-xl) {
                 box-shadow: -8px 8px 8px grey;
             }
         }
         
         &:nth-child(3) {
+            background-image: url('../../imgs/paint-cans.jpg');
+            margin-top: -5px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $blue;
+                opacity: 0.7;
+                mix-blend-mode: darken;
+                z-index: -1;
+            }
+
             @media (min-width: $mq-xl) {
                 box-shadow: 0 8px 8px grey;
+                margin: 40px 9px;
             }
         }
 
         &:last-child {
-            margin-bottom: 40px;
+            background-image: url('../../imgs/house-front.jpg');
+            background-position: 50% 80%;
+            margin: -5px auto 40px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $d-green;
+                opacity: 0.7;
+                mix-blend-mode: darken;
+                z-index: -1;
+            }
 
             @media (min-width: $mq-xl) {
                 box-shadow: 8px 8px 8px grey;
+                margin: 40px 9px;
             }
         }
 
         h3 {
-            margin: 0 6px;
+            margin: 0 24px;
             font-family: $font-reg;
+            text-align: justify;
+            font-size: 1.1rem;
 
             @media (min-width: $mq-sm) {
                 padding: 30px;

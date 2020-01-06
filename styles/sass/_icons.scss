@@ -1,10 +1,11 @@
 .icn_cont {
-    margin: 0 10px;
+    margin: 0 22px 0 14px;
     transition: none;
     height: 150px;
     width: 150px;
     border: solid 2px lightgrey;
     position: relative;
+    background-color: $l-blue;
 
     @media (min-width: $mq-xl) {
         margin: 14px auto 0;
@@ -158,158 +159,6 @@
   
 }
 
-
-// #house-cont {
-//     height: 150px;
-//     width: 150px;
-//     border: solid 2px lightgrey;
-//     position: relative;
-//     float: left;
-//     background-image: linear-gradient(to top, green -4%, transparent 20%, transparent 60%, rgb(176, 205, 255) 120%);
-    
-//     #roof {
-//       content: '';
-//       height: 0;
-//       width: 80px;
-//       border-right: solid transparent 30px;
-//       border-left: solid transparent 30px;
-//       border-bottom: solid rgb(11, 86, 11) 20px;
-//       position: absolute;
-//       top: 7px;
-//       left: 5px;
-      
-//       &::after {
-//         content: '';
-//         width: 0;
-//         height: 0;
-//         border-right: solid transparent 30px;
-//         border-left: solid transparent 30px;
-//         border-bottom: solid rgb(172, 172, 172) 20px;
-//         position: absolute;
-//         left: 10.5px;
-//       }
-      
-//       &::before {
-//         content: '';
-//         width: 0;
-//         height: 8px;
-//         border-bottom: solid transparent 6.5px;
-//         border-right: solid grey 10px;
-//         position: absolute;
-//         right: -21px;
-//       }
-//     }
-  
-//     #base {
-//       width: 130px;
-//       height: 110px;
-//       background-color: rgb(209, 165, 154);
-//       border: solid 1px black;
-//       position: absolute;
-//       bottom: 13px;
-//       left: 10px;
-//       box-sizing: border-box;
-      
-//     &::after {
-//         content: '';
-//         height: 0;
-//         width: 0;
-//         border-right: solid transparent 20px;
-//         border-left: solid transparent 20px;
-//         border-bottom: solid rgb(209, 165, 154) 13.2px;
-//         position: absolute;
-//         top: -13px;
-//         left: 44px;
-//       }
-      
-//       &::before {
-//         content: '';
-//         width: 24px;
-//         height: 42px;
-//         background-color: white;
-//         position: absolute;
-//         bottom: 0;
-//         right: 52px;
-//         border: 1px solid black;
-//         border-bottom: none;
-//         box-sizing: border-box;
-//       }
-      
-//       #mid-panel {
-//         width: 33.3%;
-//         height: 100%;
-//         border-left: solid 1px black;
-//         border-right: solid 1px black;
-//         margin: 0 auto;
-//         box-shadow: 0 0 4px 1px #666;
-//         position: relative;
-        
-//         &::after {
-//           content: '';
-//           width: 5px;
-//           height: 5px;
-//           background-color: gold;
-//           border-radius: 50%;
-//           position: absolute;
-//           bottom: 14px;
-//           right: 31%;
-//         }
-        
-//         &::before {
-//           content: '';
-//           height: 20px;
-//           width: 12px;
-//           border: 3px solid white;
-//           position: absolute;
-//           top: 12px;
-//           left: 12px;
-//           background-color: #92C1FE;
-//           box-shadow: 0 2px 2px 0 #333;
-//         }
-//       }
-      
-//       .window {
-//         height: 20px;
-//         width: 12px;
-//         border: 3px solid white;
-//         position: absolute;
-//         top: 12px;
-//         left: 10px;
-//         background-color: #92C1FE;
-//         box-shadow: 0 2px 2px 0 #333;
-        
-//         &::after {
-//           content: '';
-//           height: 20px;
-//           width: 12px;
-//           border: 3px solid white;
-//           position: absolute;
-//           top: -3px;
-//           left: 86px;
-//           background-color: #92C1FE;
-//           box-shadow: 0 2px 2px 0 #333;
-//         }
-//       }
-      
-//       #window-2 {
-//         top: 68px;
-        
-//         &::before {
-//           content: '';
-//           height: 0;
-//           width: 132px;
-//           border-right: solid transparent 10px;
-//           border-left: solid transparent 10px;
-//           border-bottom: solid rgb(177, 177, 177) 13px;
-//           position: absolute;
-//           bottom: -31px;
-//           left: -25px;
-//         }
-//       }
-//     }
-//   }
-
-
 #roller-cont {
     position: relative;
     float: right;
@@ -422,8 +271,6 @@
         }
     }
 }
-
-
 
 #C-cont {
     background: darkblue;
