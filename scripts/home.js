@@ -1,3 +1,6 @@
+const body = document.body;
+const html = document.documentElement;
+
 const menuIcn = document.getElementById("menu_bars");
 const nav = document.getElementById('nav');
 const navExit = document.getElementById('menuExitLayer');
@@ -9,6 +12,11 @@ const bar1 = document.getElementById('bar_1');
 const bar2 = document.getElementById('bar_2');
 const bar3 = document.getElementById('bar_3');
 var menuShowing = false;
+
+const subHeading = document.getElementById("sub-heading");
+const subHeadingText = document.getElementById("sub-heading-text");
+const subHeadingScroll = 250;
+const subHeadingTextScroll = 350;
 
 function toggleNav() {
     if (!menuShowing) {
@@ -40,6 +48,17 @@ function showBannerHeading() {
     bannerShade.style.top = 0;
     bannerHeading.style.opacity = 1;
 }
+
+function showSubHeadings() {
+    if (body.scrollTop > subHeadingScroll || html.scrollTop > subHeadingScroll) {
+        subHeading.style.opacity = "1";
+    }
+    if (body.scrollTop > subHeadingTextScroll || html.scrollTop > subHeadingTextScroll) {
+        subHeadingText.style.opacity = "1";
+    }
+}
+
+window.onscroll = function() {showSubHeadings()};
 
 menuIcn.addEventListener('click', toggleNav);
 navExit.addEventListener('click', hideMenu);
