@@ -59,6 +59,7 @@
         justify-content: space-evenly;
         width: 96%;
         margin: 40px auto 0;
+        align-items: stretch;
     }
 
     .front_desc {
@@ -69,7 +70,6 @@
         transform-style: preserve-3d;
         position: relative;
         background-size: cover;
-        flex-basis: 33%;
         border-bottom: 4px $blue solid;
 
         &::before {
@@ -90,8 +90,11 @@
             padding: 0px;
             display: flex;
             flex-direction: column;
-            margin: 40px 9px;
+            flex-basis: 33%;
+            margin: 40px 0;
             height: 100%;
+            min-height: 550px;
+            box-sizing: border-box;
         }
 
         .front-desc-heading,
@@ -130,14 +133,6 @@
             }
         }
 
-        &:nth-child(3):hover .icn_cont {
-            box-shadow: none;
-
-            @media (min-width: $mq-xl) {
-                box-shadow: 0 4px 4px grey;
-            }
-        }
-
         &:first-child,
         &:last-child {
             display: flex;
@@ -165,8 +160,8 @@
             }
 
             @media (min-width: $mq-xl) {
-                box-shadow: 0 8px 8px grey;
-                margin: 40px 9px;
+                box-shadow: -8px 8px 8px grey;
+                margin: 40px 0px;
                 border: solid 4px $l-blue;
 
                 &:hover {
@@ -185,7 +180,7 @@
             }
 
             @media (min-width: $mq-xl) {
-                box-shadow: -8px 8px 8px grey;
+                box-shadow: 0px 8px 8px grey;
             }
         }
 
@@ -201,7 +196,7 @@
 
             @media (min-width: $mq-xl) {
                 box-shadow: 8px 8px 8px grey;
-                margin: 40px 9px;
+                margin: 40px 0px;
             }
         }
 
