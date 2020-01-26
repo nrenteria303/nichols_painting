@@ -8,7 +8,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "netlify-cms": "^2.10.13"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
