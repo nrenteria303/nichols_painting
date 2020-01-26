@@ -38,7 +38,8 @@ gulp.task('default', ['compile-sass'], function() {
         server: {
                 baseDir: "./"
         },
-        notify: false
+        notify: false,
+        open: false
     });
     gulp.watch("styles/sass/*.scss", ["watch-css"]);
     gulp.watch("*.html", ["watch-html"]);
