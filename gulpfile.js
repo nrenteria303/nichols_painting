@@ -33,13 +33,14 @@ gulp.task('watch-fonts', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('build', ['compile-sass'], function() {});
+
 gulp.task('default', ['compile-sass'], function() {
     browserSync.init({
         server: {
                 baseDir: "./"
         },
-        notify: false,
-        open: false
+        notify: false
     });
     gulp.watch("styles/sass/*.scss", ["watch-css"]);
     gulp.watch("*.html", ["watch-html"]);
