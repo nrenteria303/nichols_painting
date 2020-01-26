@@ -1,4 +1,3 @@
-const body = document.body;
 const html = document.documentElement;
 
 const menuIcn = document.getElementById("menu_bars");
@@ -16,7 +15,7 @@ var menuShowing = false;
 const subHeading = document.getElementById("sub-heading");
 const subHeadingText = document.getElementById("sub-heading-text");
 const subHeadingScroll = 250;
-const subHeadingTextScroll = 350;
+const subHeadingTextScroll = 420;
 
 function toggleNav() {
     if (!menuShowing) {
@@ -50,10 +49,10 @@ function showBannerHeading() {
 }
 
 function showSubHeadings() {
-    if (body.scrollTop > subHeadingScroll || html.scrollTop > subHeadingScroll) {
+    if (window.scrollTop > subHeadingScroll || html.scrollTop > subHeadingScroll) {
         subHeading.style.opacity = "1";
     }
-    if (body.scrollTop > subHeadingTextScroll || html.scrollTop > subHeadingTextScroll) {
+    if (window.scrollTop > subHeadingTextScroll || html.scrollTop > subHeadingTextScroll) {
         subHeadingText.style.opacity = "1";
     }
 }
