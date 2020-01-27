@@ -73,12 +73,9 @@
         display: block;
         width: 100vw;
         max-width: 800px;
-        border-top: solid 4px $blue;
-        border-bottom: solid 4px $blue;
         box-shadow: 0 0 12px 1px black;
 
         @media (min-width: $mq-md) {
-            border: solid 4px $blue; 
             border-radius: 20px 0 20px 0;
         }
     }
@@ -91,7 +88,6 @@
 
         p {
             font-size: 1.3rem;
-            text-align: left;
             max-width: 92%;
             margin: 8px auto;
 
