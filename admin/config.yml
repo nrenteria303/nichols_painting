@@ -2,3 +2,36 @@ backend:
   name: git-gateway
   branch: master
 media_folder: "imgs/uploads"
+collections: 
+  - name: "service-slide"
+    label: "Service Slide"
+    folder: "_posts/service-slides"
+    create: true
+    slug: "service-slide-{{slug}}"
+    fields:
+      - {
+        label: "Service Slideshow Image",
+        name: "image",
+        widget: "image"
+      }
+      - {
+        label: "Caption",
+        name: "caption",
+        widget: "string"
+      }
+  - name: "testimonial"
+    label: "Testimonial"
+    folder: "_posts/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+        label: "Quote from Customer",
+        name: "quote",
+        widget: "text"
+      }
+      - {
+        label: "Customer Name",
+        name: "customer-name",
+        widget: "string"
+      }
