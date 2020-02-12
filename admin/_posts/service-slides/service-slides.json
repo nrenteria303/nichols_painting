@@ -1,0 +1,22 @@
+[
+    {
+        "image": "../../../imgs/serv-slide-1.jpg",
+        "caption": "Custom paint for every part of your home",
+        "altText": "Painted doors inside a home"
+    },
+    {
+        "image": "../../../imgs/serv-slide-2.jpg",
+        "caption": "Custom paint for every part of your home",
+        "altText": "Painted doors inside a home"
+    },
+    {
+        "image": "../../../imgs/serv-slide-3.jpg",
+        "caption": "Custom paint for every part of your home",
+        "altText": "Painted doors inside a home"
+    },
+    {
+        "image": "../../../imgs/serv-slide-4.jpg",
+        "caption": "Custom paint for every part of your home",
+        "altText": "Painted doors inside a home"
+    }
+]

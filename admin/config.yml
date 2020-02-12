@@ -19,6 +19,11 @@ collections:
         name: "caption",
         widget: "string"
       }
+      - {
+        label: "Alt Text",
+        name: "altText",
+        widegt: "string"
+      }
   - name: "testimonial"
     label: "Testimonial"
     folder: "_posts/testimonials"
