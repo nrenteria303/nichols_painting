@@ -30,7 +30,6 @@ $.ajax({
                             <a class="next">&#10095;</a>`;
             $container.append($slideshowHTML);
 
-            // $dotContainer.add("div").addClass("dot");
             var newDot = document.createElement("div");
             newDot.classList.add("dot");
             $dotContainer.append(newDot);
@@ -42,7 +41,7 @@ $.ajax({
 
         function showSlides(n) {
             var index;
-            var dots = document.getElementsByClassName('dot');
+            // var dots = document.getElementsByClassName('dot');
             if (n > slides.length) {
                 slideIndex = 1;
             } 
@@ -52,11 +51,11 @@ $.ajax({
             for (index = 0; index < slides.length; index++) {
                 slides[index].style.display = 'none';
             }
-            for (index = 0; index < dots.length; index++) {
-                dots[index].className = dots[index].className.replace(' active', '');
+            for (index = 0; index < $dots.length; index++) {
+                $dots[index].className = $dots[index].className.replace(' active', '');
             }
             slides[slideIndex - 1].style.display = 'block';
-            dots[slideIndex - 1].className += ' active';
+            $dots[slideIndex - 1].className += ' active';
         }
         
         function currentSlide(n) {
@@ -70,10 +69,9 @@ $.ajax({
         $prevBtn.click(function() {plusSlides(-1)});
         $nextBtn.click(function() {plusSlides(1)});
 
-        $dots[0].addEventListener("click", function() {currentSlide(1)});
-        $dots[1].addEventListener("click", function() {currentSlide(2)});
-        $dots[2].addEventListener("click", function() {currentSlide(3)});
-        $dots[3].addEventListener("click", function() {currentSlide(4)});
+        $dots.forEach(function(dot, i) {
+            dot.addEventListener("click", function() {currentSlide(i + 1)});
+        });
         
         showSlides(slideIndex);
     }
