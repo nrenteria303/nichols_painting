@@ -10,6 +10,11 @@ collections:
     slug: "service-slide-{{slug}}"
     fields:
       - {
+        label: "Title",
+        name: "title",
+        widget: "string"
+      }
+      - {
         label: "Service Slideshow Image",
         name: "image",
         widget: "image"
@@ -30,6 +35,11 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {
+        label: "Title",
+        name: "title",
+        widget: "string"
+      }
       - {
         label: "Quote from Customer",
         name: "quote",

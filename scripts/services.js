@@ -41,7 +41,6 @@ $.ajax({
 
         function showSlides(n) {
             var index;
-            // var dots = document.getElementsByClassName('dot');
             if (n > slides.length) {
                 slideIndex = 1;
             } 
