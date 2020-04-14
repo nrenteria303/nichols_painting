@@ -7,7 +7,7 @@
 #sub-heading-cont {
     color: $blue;
     font-weight: bold;
-    width: 94vw;
+    width: 80vw;
     max-width: 1200px;
     margin: 70px auto 40px;
     border: 12px dashed $blue;
@@ -96,7 +96,7 @@
             box-sizing: border-box;
         }
 
-        .front-desc-heading,
+        &,
         p,
         p a {
             z-index: 2;
@@ -104,7 +104,29 @@
             text-shadow: 0 0 6px black;
         }
 
-        .front-desc-heading {
+        p {
+            margin-top: 0;
+            text-align: left;
+            font-size: 1.3rem;
+            font-weight: bold;
+            max-width: 700px;
+            margin: 0 auto;
+
+            @media (min-width: $mq-sm) {
+                padding: 30px;
+            }
+            @media (min-width: $mq-xl) {
+                padding: 16px;
+            }
+        }
+
+        a {
+            font-family: $font-heading;
+            text-decoration: underline;
+            color: $blue;
+        }
+
+        &-heading {
             font-size: 2.7rem;
             text-align: center;
             text-decoration: underline;
@@ -139,7 +161,6 @@
             justify-content: center;
 
             @media (min-width: $mq-xl) {
-                padding: 50px 0;
 
                 p {
                     font-size: 1.5rem;
@@ -197,25 +218,6 @@
                 box-shadow: 8px 8px 8px grey;
                 margin: 40px 0px;
             }
-        }
-
-        p {
-            text-align: left;
-            font-size: 1.3rem;
-            font-weight: bold;
-
-            @media (min-width: $mq-sm) {
-                padding: 30px;
-            }
-            @media (min-width: $mq-xl) {
-                padding: 16px;
-            }
-        }
-
-        a {
-            font-family: $font-heading;
-            text-decoration: underline;
-            color: $blue;
         }
     }
 }

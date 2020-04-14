@@ -13,13 +13,18 @@
         display: none;
     }
 
-    #main-heading,
-    i {
-        align-self: center;
-        margin: 0 22px;
+    .logo-link {
+        color: $light;
+        text-decoration: none;
     }
 
-    #main-heading {
+    .logo-link #main-heading,
+    .logo-link i {
+        align-self: center;
+        margin: 10px 22px;
+    }
+
+    .logo-link #main-heading {
         line-height: 1;
         text-align: center;
     }
@@ -75,6 +80,11 @@ nav {
         height: 100%;
         top:0;
         left: 0;
+    }
+
+    .logo-link {
+        color: $light;
+        text-decoration: none;
     }
 
     #nav_heading {
