@@ -17,17 +17,17 @@ $.ajax({
     method: "get",
     success: function(res) {
         for (let i = 0; i < res.length; i++) {
-            var $slideshowHTML = `<div class="slides fade">
-                                    <img src="`;
-            $slideshowHTML += res[i].image + `" alt="` + res[i].altText + `">`;
-            $slideshowHTML += `<div class="caption"><p>` + res[i].caption + `</p></div>
-                            </div>
-                            <div class="cl_down_1 cl"></div>
-                            <div class="cl_down_2 cl"></div>
-                            <div class="cl_up_1 cl"></div>
-                            <div class="cl_up_2 cl"></div>
-                            <a class="prev">&#10094;</a>
-                            <a class="next">&#10095;</a>`;
+            var $slideshowHTML = '<div class="slides fade"> \
+                                    <img src="';
+            $slideshowHTML += res[i].image + '" alt="' + res[i].altText + '">';
+            $slideshowHTML += '<div class="caption"><p>' + res[i].caption + '</p></div> \
+                            </div> \
+                            <div class="cl_down_1 cl"></div> \
+                            <div class="cl_down_2 cl"></div> \
+                            <div class="cl_up_1 cl"></div> \
+                            <div class="cl_up_2 cl"></div> \
+                            <a class="prev">&#10094;</a> \
+                            <a class="next">&#10095;</a>';
             $container.append($slideshowHTML);
 
             var newDot = document.createElement("div");
@@ -68,9 +68,9 @@ $.ajax({
         $prevBtn.click(function() {plusSlides(-1)});
         $nextBtn.click(function() {plusSlides(1)});
 
-        $dots.forEach(function(dot, i) {
-            dot.addEventListener("click", function() {currentSlide(i + 1)});
-        });
+        for (let i = 0; i < $dots.length; i++) {
+            $dots[i].addEventListener("click", function() {currentSlide(i + 1)});
+        }
         
         showSlides(slideIndex);
     }

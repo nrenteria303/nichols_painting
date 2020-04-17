@@ -1,7 +1,8 @@
-#front_page_main {
+#home-body {
     @media (min-width: $mq-xl) {
+        margin: 0;
         @include wrapper;
-    }    
+    }
 }
 
 #sub-heading-cont {
@@ -195,7 +196,7 @@
             background-image: url('../../imgs/trees.jpg');
 
             &::before {
-                background-color: rgb(159, 32, 255);
+                background-color: rgba(92, 36, 135, 0.748);
                 opacity: 0.85;
             }
 
@@ -226,7 +227,6 @@
     text-align: center;
 
     @media (min-width: $mq-xl) {
-        @include wrapper;
         margin-top: 50px;
         margin-bottom: 90px;
     }
