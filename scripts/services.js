@@ -12,7 +12,7 @@ const bar3 = document.getElementById('bar_3');
 var menuShowing = false;
 
 $.ajax({
-    url: "../admin/_posts/service-slides/service-slides.json",
+    url: "./_posts/service-slides/service-slides.json",
     dataType: "json",
     method: "get",
     success: function(res) {
