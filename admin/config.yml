@@ -5,7 +5,7 @@ media_folder: "imgs/uploads"
 collections: 
   - name: "service-slide"
     label: "Service Slide"
-    folder: "_posts/service-slides"
+    folder: "_posts/service-slides/service-slides.json"
     create: true
     slug: "service-slide-{{slug}}"
     fields:
