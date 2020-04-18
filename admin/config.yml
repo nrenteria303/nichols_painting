@@ -27,7 +27,7 @@ collections:
       - {
         label: "Alt Text",
         name: "altText",
-        widegt: "string"
+        widget: "string"
       }
   - name: "testimonial"
     label: "Testimonial"
