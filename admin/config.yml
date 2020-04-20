@@ -3,54 +3,51 @@ backend:
   branch: master
 media_folder: "imgs/uploads"
 collections: 
-  - name: "service-slide"
-    label: "Service Slide"
-    folder: "_posts/service-slides"
-    file: "_posts/service-slides/service-slides.json"
-    format: "json" 
-    create: true
-    slug: "service-slide-{{slug}}"
-    fields:
-      - {
-        label: "Title",
-        name: "title",
-        widget: "string"
-      }
-      - {
-        label: "Service Slideshow Image",
-        name: "image",
-        widget: "image"
-      }
-      - {
-        label: "Caption",
-        name: "caption",
-        widget: "string"
-      }
-      - {
-        label: "Alt Text",
-        name: "altText",
-        widget: "string"
-      }
-  - name: "testimonial"
-    label: "Testimonial"
-    folder: "_posts/testimonials"
-    file: "_posts/testimonials/testimonials.json"
-    format: "json"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {
-        label: "Title",
-        name: "title",
-        widget: "string"
-      }
-      - {
-        label: "Quote from Customer",
-        name: "quote",
-        widget: "text"
-      }
-      - {
-        label: "Customer Name",
-        name: "customer-name",
-        widget: "string"
-      }
+  - name: "content"
+    label: "Site Content"
+    files:
+      - name: "service-slides"
+        label: "Service Slides"
+        file: "_posts/service-slides/service-slides.json"
+        description: "The images and captions that go in the slideshow at the top of the Services page"
+        fields:
+          - {
+            label: "Title",
+            name: "title",
+            widget: "string"
+          }
+          - {
+            label: "Service Slideshow Image",
+            name: "image",
+            widget: "image"
+          }
+          - {
+            label: "Caption",
+            name: "caption",
+            widget: "string"
+          }
+          - {
+            label: "Alt Text",
+            name: "altText",
+            widget: "string"
+          }
+      - name: "testimonial"
+        label: "Testimonial"
+        file: "_posts/testimonials/testimonials.json"
+        description: "The testimonials from satisfied customers and their names"
+        fields:
+          - {
+            label: "Title",
+            name: "title",
+            widget: "string"
+          }
+          - {
+            label: "Quote from Customer",
+            name: "quote",
+            widget: "text"
+          }
+          - {
+            label: "Customer Name",
+            name: "customer-name",
+            widget: "string"
+          }
