@@ -9,6 +9,7 @@ collections:
       - name: "service-slides"
         label: "Service Slides"
         file: "_posts/service-slides/service-slides.json"
+        format: "json"
         description: "The images and captions that go in the slideshow at the top of the Services page"
         create: true
         fields:
@@ -35,6 +36,7 @@ collections:
       - name: "testimonial"
         label: "Testimonial"
         file: "_posts/testimonials/testimonials.json"
+        format: "json"
         description: "The testimonials from satisfied customers and their names"
         create: true
         fields:
