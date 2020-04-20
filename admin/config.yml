@@ -5,7 +5,9 @@ media_folder: "imgs/uploads"
 collections: 
   - name: "service-slide"
     label: "Service Slide"
+    folder: "_posts/service-slides"
     file: "_posts/service-slides/service-slides.json"
+    format: "JSON" 
     create: true
     slug: "service-slide-{{slug}}"
     fields:
@@ -31,7 +33,9 @@ collections:
       }
   - name: "testimonial"
     label: "Testimonial"
+    folder: "_posts/testimonials"
     file: "_posts/testimonials/testimonials.json"
+    format: "JSON"
     create: true
     slug: "{{slug}}"
     fields:
