@@ -35,12 +35,8 @@ collections:
           - label: "Testimonials"
             name: "testimonials"
             widget: "list"
+            identifier_field: "customerName"
             fields:
-              - {
-                label: "Title",
-                name: "title",
-                widget: "string"
-              }
               - {
                 label: "Quote from Customer",
                 name: "quote",
