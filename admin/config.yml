@@ -48,6 +48,6 @@ collections:
               }
               - {
                 label: "Customer Name",
-                name: "customer-name",
+                name: "customerName",
                 widget: "string"
               }

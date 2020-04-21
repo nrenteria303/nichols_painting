@@ -1,0 +1,24 @@
+{
+    "testimonials": [
+        {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt orci neque. Mauris lectus ante, rutrum eu blandit nec, posuere sit amet justo. Nullam nec imperdiet massa. Duis quis dapibus quam. Aenean a nunc metus.",
+            "customerName": "Satisfied Customer 1"
+        },
+        {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt orci neque. Mauris lectus ante, rutrum eu blandit nec, posuere sit amet justo. Nullam nec imperdiet massa. Duis quis dapibus quam. Aenean a nunc metus. Vivamus imperdiet ex mi, eu molestie lectus gravida sit amet.",
+            "customerName": "Satisfied Customer 2"
+        },
+        {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt orci neque.",
+            "customerName": "Satisfied Customer 3"
+        },
+        {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt orci neque. Mauris lectus ante, rutrum eu blandit nec, posuere sit amet justo. Nullam nec imperdiet massa. Duis quis dapibus quam. Aenean a nunc metus. Vivamus imperdiet ex mi, eu molestie lectus gravida sit amet. Mauris luctus nisi euismod, vestibulum felis quis, aliquet turpis. Sed magna risus, dictum aliquam faucibus eget, elementum ac lorem.",
+            "customerName": "Satisfied Customer 4"
+        },
+        {
+            "quote": "Mauris lectus ante, rutrum eu blandit nec, posuere sit amet justo. Nullam nec imperdiet massa. Duis quis dapibus quam. Aenean a nunc metus. Vivamus imperdiet ex mi, eu molestie lectus gravida sit amet. Mauris luctus nisi euismod, vestibulum felis quis, aliquet turpis. Sed magna risus, dictum aliquam faucibus eget, elementum ac lorem.",
+            "customerName": "Satisfied Customer 5"
+        }
+    ]
+}

@@ -16,7 +16,6 @@ $.ajax({
     dataType: "json",
     method: "get",
     success: function(res) {
-        // console.log(res.slides);
         for (let i = 0; i < res.slides.length; i++) {
             var $slideshowHTML = '<div class="slides fade"> \
                                     <img src="';
@@ -98,11 +97,6 @@ function hideMenu() {
     bar1.classList.remove('right_x');
     bar2.classList.remove('left_x');
     bar3.classList.remove('right_x');
-}
-
-function showBannerHeading() {
-    bannerShade.style.top = 0;
-    bannerHeading.style.opacity = 1;
 }
 
 menuIcn.addEventListener('click', toggleNav);
