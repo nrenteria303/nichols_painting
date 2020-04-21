@@ -1,24 +1,34 @@
 {
-    "slides": [
-        {
-            "image": "../../../imgs/serv-slide-1.jpg",
-            "caption": "Custom paint for every part of your home",
-            "altText": "Painted doors inside a home"
-        },
-        {
-            "image": "../../../imgs/serv-slide-2.jpg",
-            "caption": "Expert exterior painting",
-            "altText": "Exterior of a home painted by Nichols Quality Painting"
-        },
-        {
-            "image": "../../../imgs/serv-slide-3.jpg",
-            "caption": "Custom driftwood furniture for commercial...",
-            "altText": "Custom driftwood desk inside of local yoga studio"
-        },
-        {
-            "image": "../../../imgs/serv-slide-4.jpg",
-            "caption": "...or residential use!",
-            "altText": "Several pieces of driftwood furtniture, including a table and planters"
-        }
-    ]
+  "slides": [
+    {
+      "image": "../../../imgs/serv-slide-1.jpg",
+      "caption": "Custom paint for every part of your home",
+      "altText": "Painted doors inside a home",
+      "title": "blue-doors"
+    },
+    {
+      "image": "../../../imgs/serv-slide-2.jpg",
+      "caption": "Expert exterior painting",
+      "altText": "Exterior of a home painted by Nichols Quality Painting",
+      "title": "beige-exterior"
+    },
+    {
+      "image": "../../../imgs/serv-slide-3.jpg",
+      "caption": "Custom driftwood furniture for commercial...",
+      "altText": "Custom driftwood desk inside of local yoga studio",
+      "title": "commercial-driftwood"
+    },
+    {
+      "image": "../../../imgs/serv-slide-4.jpg",
+      "caption": "...or residential use!",
+      "altText": "Several pieces of driftwood furtniture, including a table and planters",
+      "title": "residential-driftwood"
+    },
+    {
+      "title": "green-exterior",
+      "image": "/imgs/uploads/serv-slide-green-house.jpg",
+      "caption": "Upgrade your curb appeal today!",
+      "altText": "Exterior of a house with a fresh paint job"
+    }
+  ]
 }
