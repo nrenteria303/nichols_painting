@@ -16,11 +16,12 @@ $.ajax({
     dataType: "json",
     method: "get",
     success: function(res) {
-        for (let i = 0; i < res.length; i++) {
+        // console.log(res.slides);
+        for (let i = 0; i < res.slides.length; i++) {
             var $slideshowHTML = '<div class="slides fade"> \
                                     <img src="';
-            $slideshowHTML += res[i].image + '" alt="' + res[i].altText + '">';
-            $slideshowHTML += '<div class="caption"><p>' + res[i].caption + '</p></div> \
+            $slideshowHTML += res.slides[i].image + '" alt="' + res.slides[i].altText + '">';
+            $slideshowHTML += '<div class="caption"><p>' + res.slides[i].caption + '</p></div> \
                             </div> \
                             <div class="cl_down_1 cl"></div> \
                             <div class="cl_down_2 cl"></div> \

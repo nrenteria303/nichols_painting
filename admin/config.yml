@@ -6,52 +6,48 @@ collections:
   - name: "content"
     label: "Site Content"
     files:
-      - name: "service-slides"
-        label: "Service Slides"
+      - label: "Service Slides"
+        name: "service-slides"
         file: "_posts/service-slides/service-slides.json"
         format: "json"
         description: "The images and captions that go in the slideshow at the top of the Services page"
         create: true
         fields:
-          - {
-            label: "Title",
-            name: "title",
-            widget: "string"
-          }
-          - {
-            label: "Service Slideshow Image",
-            name: "image",
-            widget: "image"
-          }
-          - {
-            label: "Caption",
-            name: "caption",
-            widget: "string"
-          }
-          - {
-            label: "Alt Text",
-            name: "altText",
-            widget: "string"
-          }
-      - name: "testimonial"
-        label: "Testimonial"
+          - label: "Slides"
+            name: "slides"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {
+                label: "Service Slideshow Image",
+                name: "image",
+                widget: "image"
+              }
+              - {label: "Caption", name: "caption", widget: "string"}
+              - {label: "Alt Text", name: "altText", widget: "string"}
+      - label: "Testimonials List"
+        name: "testimonials-list"
         file: "_posts/testimonials/testimonials.json"
         format: "json"
         description: "The testimonials from satisfied customers and their names"
         create: true
         fields:
-          - {
-            label: "Title",
-            name: "title",
-            widget: "string"
-          }
-          - {
-            label: "Quote from Customer",
-            name: "quote",
-            widget: "text"
-          }
-          - {
-            label: "Customer Name",
-            name: "customer-name",
-            widget: "string"
-          }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {
+                label: "Title",
+                name: "title",
+                widget: "string"
+              }
+              - {
+                label: "Quote from Customer",
+                name: "quote",
+                widget: "text"
+              }
+              - {
+                label: "Customer Name",
+                name: "customer-name",
+                widget: "string"
+              }
