@@ -173,6 +173,7 @@ nav {
     animation: banner_slideshow 12s ease-in-out infinite;
     background-repeat: no-repeat;
     height: calc(100vh - 78px);
+    min-height: -webkit-fill-available;
     border-bottom: 5px solid $blue;
     margin-top: 78px;
     position: relative;

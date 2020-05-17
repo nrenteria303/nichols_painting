@@ -63,10 +63,11 @@
     }
 
     .front_desc {
-        padding: 60px 24px;
+        padding: 40px 24px;
         perspective: 600px;
         transition: border .2s ease-in;
-        height: 72vh;
+        height: 94vh;
+        box-sizing: border-box;
         transform-style: preserve-3d;
         position: relative;
         background-size: cover;
@@ -110,7 +111,8 @@
             text-align: left;
             font-size: 1.3rem;
             font-weight: bold;
-            max-width: 700px;
+            line-height: 1.5;
+            max-width: 560px;
             margin: 0 auto;
 
             @media (min-width: $mq-sm) {
@@ -131,7 +133,7 @@
             font-size: 2.7rem;
             text-align: center;
             text-decoration: underline;
-            margin-top: 0;
+            margin: 0 auto 64px;
 
             @media (min-width: $mq-xl) {
                 margin: 30px auto 20px;
