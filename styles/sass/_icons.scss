@@ -1,5 +1,5 @@
 .icn_cont {
-    margin: -10px auto 30px;
+    margin: -10px auto 24px;
     transition: none;
     height: 150px;
     width: 150px;
@@ -8,9 +8,13 @@
     background-color: $l-blue;
 
     @media (min-width: $mq-xl) {
-        margin: 14px auto 0;
+        margin: 6px auto 20px;
         transition: all .3s ease-out;
     }
+
+    @media (min-width: 1350px) {
+      margin: 14px auto 40px;
+  }
 }
 
 #C-cont {
