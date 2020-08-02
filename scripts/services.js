@@ -68,6 +68,20 @@ $.ajax({
         $prevBtn.click(function() {plusSlides(-1)});
         $nextBtn.click(function() {plusSlides(1)});
 
+        document.querySelector(".prev").setAttribute("tabindex", "0");
+        document.querySelector(".next").setAttribute("tabindex", "0");
+
+        document.querySelector(".prev").addEventListener("keydown", (function(e) {
+            if (e.keyCode === 13) {
+                plusSlides(-1);
+            }
+        }));
+        document.querySelector(".next").addEventListener("keydown", (function(e) {
+            if (e.keyCode === 13) {
+                plusSlides(1);
+            }
+        }));
+
         for (let i = 0; i < $dots.length; i++) {
             $dots[i].addEventListener("click", function() {currentSlide(i + 1)});
         }
