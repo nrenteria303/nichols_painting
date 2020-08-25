@@ -36,6 +36,9 @@
             float: right;
             padding: 0 calc((80vw - 1100px) / 2) 20px 20px;
         }
+        @media (min-width: 1600px) {
+            padding-right: 180px;
+        }
     }
 
     #quotations {
