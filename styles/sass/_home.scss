@@ -8,7 +8,7 @@
 #sub-heading-cont {
     color: $blue;
     font-weight: bold;
-    width: 80vw;
+    width: 96vw;
     max-width: 1200px;
     margin: 70px auto 40px;
     border: 12px dashed $blue;
@@ -62,7 +62,6 @@
     @media (min-width: $mq-xl) {
         display: flex;
         justify-content: space-evenly;
-        width: 96%;
         margin: 40px auto 0;
         align-items: stretch;
     }
@@ -70,13 +69,11 @@
     .front_desc {
         padding: 40px 24px;
         perspective: 600px;
-        transition: border .2s ease-in;
         height: 94vh;
         box-sizing: border-box;
         transform-style: preserve-3d;
         position: relative;
         background-size: cover;
-        border-bottom: 4px $blue solid;
         max-height: 630px;
 
         &::before {
@@ -93,11 +90,10 @@
         }
 
         @media (min-width: $mq-xl) {
-            border: solid 4px $l-blue;
-            padding: 0px;
+            padding: 0 20px;
             display: flex;
             flex-direction: column;
-            flex-basis: 33%;
+            flex-basis: 33.34%;
             margin: 40px 0;
             min-height: 550px;
             box-sizing: border-box;
@@ -113,7 +109,7 @@
 
         p {
             margin-top: 0;
-            text-align: left;
+            text-align: center;
             font-size: 1.3rem;
             font-weight: bold;
             line-height: 1.5;
@@ -137,20 +133,11 @@
         &-heading {
             font-size: 2.7rem;
             text-align: center;
-            text-decoration: underline;
             margin: 0 auto 30px;
 
             @media (min-width: $mq-xl) {
                 margin: 30px auto 30px;
                 text-decoration: none;
-            }
-        }
-
-        &:hover {
-            border: none;
-
-            @media (min-width: $mq-xl) {
-                border: solid 4px $blue;
             }
         }
 
@@ -179,8 +166,6 @@
         
         &:first-child {
             background-image: url('../../imgs/paint-cans.jpg');
-            border-bottom: 4px $blue solid;
-            border-top: 4px $blue solid;
 
             &::before {
                 background-color: rgb(7, 96, 7);
@@ -188,13 +173,7 @@
             }
 
             @media (min-width: $mq-xl) {
-                box-shadow: -8px 8px 8px grey;
                 margin: 40px 0px;
-                border: solid 4px $l-blue;
-
-                &:hover {
-                    border: solid 4px $blue;
-                }
             }
             
         }
@@ -205,10 +184,6 @@
             &::before {
                 background-color: rgba(92, 36, 135, 0.748);
                 opacity: 0.85;
-            }
-
-            @media (min-width: $mq-xl) {
-                box-shadow: 0px 8px 8px grey;
             }
         }
 
@@ -223,7 +198,6 @@
             }
 
             @media (min-width: $mq-xl) {
-                box-shadow: 8px 8px 8px grey;
                 margin: 40px 0px;
             }
         }
